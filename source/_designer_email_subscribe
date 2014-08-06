@@ -1,0 +1,3 @@
+form.subscribe action="http://smoothconversion.createsend.com/t/d/s/jituyh/"
+  input.email placeholder="Your email" name="cm-jituyh-jituyh" type="email" required="required"
+  input.outline-button type="submit" value=(locals[:subscribe_button] || "Get Free Tips")
