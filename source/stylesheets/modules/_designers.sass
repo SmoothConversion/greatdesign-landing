@@ -1,0 +1,42 @@
+$left-gutter: 15%
+$top-bottom-margin: 5%
+
+#designers
+  background: $purple
+  padding-bottom: $top-bottom-margin
+
+  h2
+    font-family: "Raleway"
+    text-transform: uppercase
+    color: #fff
+    font-size: 77px
+    font-size: 7.7em
+    font-weight: 100
+    margin: 0 0 $top-bottom-margin/2 $left-gutter
+    padding: $top-bottom-margin 0 $top-bottom-margin/3 0
+    border-bottom: 1px solid rgba(#fff, 0.7)
+
+  .content 
+    padding-left: $left-gutter
+    +box-sizing(border-box)
+    margin-bottom: $top-bottom-margin * 0.75
+
+    section
+      margin-bottom: $top-bottom-margin/2
+
+    h3
+      color: $light-purple
+      margin-bottom: $top-bottom-margin/3
+
+    p 
+      color: darken($charcoal, 8%)
+      width: 67.5%
+    
+  form.subscribe
+    width: 100%
+    +subscribe-form($light-purple, $light-purple, $light-purple, none, #fff, #fff)
+    input[type=email]
+      margin-left: $left-gutter
+
+
+

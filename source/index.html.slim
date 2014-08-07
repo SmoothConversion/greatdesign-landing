@@ -1,8 +1,8 @@
 ---
-title: A curated, high end template marketplace - Greatdesign.io
+title: A curated high end template marketplace - Greatdesign.io
 ---
 
-.landing-banner
+#landing-banner
   img src="/images/banner.jpg"
   
   .content
@@ -20,14 +20,17 @@ title: A curated, high end template marketplace - Greatdesign.io
       span.didot-number= "10"
       = "% discount **"
 
-.info-sections
+#info-sections
   section
     h3 Stop digging through low quality templates.
     p Existing template sites are overcrowded, poorly organized, and force designers to compete on price instead of quality. Using a template can be a quick and cost-effective way to get a project off the ground, but you shouldn’t have to compromise.
 
   section
     h3 Elegant and responsive design. Clean code.
-    p Have you ever bought a seemingly decent template only to have your eyes fall out when you get a look at the front end code? All our templates will be rigorously vetted for design quality and code quality. We’ll also ensure that they look good on all devices, large and small.  
+    p 
+      ="Have you ever bought a seemingly decent template only to have your eyes fall out when you get a look at the front end code? Our templates will be rigorously vetted for design quality " 
+      em and
+      = " code quality. We’ll also ensure they look good on all devices, large and small."
 
   section
     h3 We believe in giving back to our supporters.
@@ -40,3 +43,27 @@ title: A curated, high end template marketplace - Greatdesign.io
 
     = partial "customer_email_subscribe", 
               locals: { subscribe_button: "Claim your discount" }
+
+#designers
+  h2 Designers
+  .content
+    section
+      h3 We are designer friendly.
+      
+      p We think the current crop of template sites are a lousy deal for designers. Low payment percentages, crowded marketplaces, exclusivity agreements, and emphasis on price instead of quality all add up to a bleak situation. 
+      
+      p We want to change all that. We believe that focusing on quality, creating a great buying experience, and charging prices that reflect the value being offered will allow us to give a lucrative source of income to talented designers.
+      
+      p
+        = "Requirements will be stringent, but the rewards will also be great. "
+        strong We’ll give designers 70% of sales with no exclusivity agreements. 
+        = "Simple. Fair. On your side. That’s what we’re all about."
+
+    section 
+      h3 Interested in submitting a template?
+      p We’ll let you know as soon as we’re ready for the first round of submissions. We’ll also give you plenty of information on the categories, styles, and coding standards that we’re looking for. 
+
+  = partial "designer_email_subscribe",
+            locals: { subscribe_button: "Get notified" }
+
+
