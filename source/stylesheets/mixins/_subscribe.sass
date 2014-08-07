@@ -1,0 +1,42 @@
+
+=submit-cta($fill-color, $text-color, $border-color)
+  background: $fill-color
+  border: 2px solid $border-color
+  font-size: 16px
+  font-size: 1.6rem
+  font-weight: bold
+  color: $text-color
+  padding: 11px 35px
+  padding: 1.1rem 3.5rem
+  +border-radius(11px)
+  +border-radius(1.1rem)
+  +transition(all 0.2s linear)
+
+  &:hover 
+    +box-shadow(rgba($border-color, 0.4) 0 0 6px 4px)
+
+
+=email-input($text-color, $border-color, $outline-color)
+  font-size: 16px
+  font-size: 1.6rem
+  border: 1px solid $border-color
+  padding: 10px 15px
+  padding: 1rem 1.5rem
+  background: none 
+  +box-sizing(border-box)
+  width: 270px
+  width: 27rem
+  color: $text-color
+  outline-color: $outline-color
+
+  +placeholder 
+    color: $text-color
+
+=subscribe-form($input-text, $input-border, $input-outline, $submit-fill, $submit-text, $submit-border)
+  input[type=email]
+    +email-input($input-text, $input-border, $input-outline)
+    margin-right: 30px
+    margin-right: 3rem
+
+  input[type=submit]
+    +submit-cta($submit-fill, $submit-text, $submit-border)

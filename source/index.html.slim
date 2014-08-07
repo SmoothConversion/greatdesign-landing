@@ -9,3 +9,34 @@ title: A curated, high end template marketplace - Greatdesign.io
     h1 
       p.primary Great Design
       p.secondary is worth paying for.
+    hr 
+    h2 We're building the web's first curated high end template marketplace.
+
+    = partial "customer_email_subscribe", 
+              locals: { subscribe_button: "Find out when we launch" }
+    
+    p.discount 
+      = "** All pre-launch subscribers receive a LIFETIME "
+      span.didot-number= "10"
+      = "% discount **"
+
+.info-sections
+  section
+    h3 Stop digging through low quality templates.
+    p Existing template sites are overcrowded, poorly organized, and force designers to compete on price instead of quality. Using a template can be a quick and cost-effective way to get a project off the ground, but you shouldn’t have to compromise.
+
+  section
+    h3 Elegant and responsive design. Clean code.
+    p Have you ever bought a seemingly decent template only to have your eyes fall out when you get a look at the front end code? All our templates will be rigorously vetted for design quality and code quality. We’ll also ensure that they look good on all devices, large and small.  
+
+  section
+    h3 We believe in giving back to our supporters.
+    p 
+      ="We’ll give you a lifetime "
+      strong 
+        span.didot-number 10
+        = "% discount" 
+      =" just for letting us notify you by email when we launch."
+
+    = partial "customer_email_subscribe", 
+              locals: { subscribe_button: "Claim your discount" }

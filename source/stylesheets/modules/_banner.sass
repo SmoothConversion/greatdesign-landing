@@ -1,0 +1,73 @@
+.full-banner
+  img 
+    width: 100%
+    height: auto
+    position: absolute 
+    top: 0
+
+  .content
+    +box-sizing(border-box)
+    padding: 2.5rem
+    position: relative 
+    z-index: 2
+    width: 100%
+    text-align: center
+
+
+.landing-banner
+  @extend .full-banner
+  
+  h1
+    color: white
+    
+    p
+      margin: 0
+
+    p.primary 
+      font-family: "Raleway"
+      font-weight: 600
+      font-size: 100px
+      font-size: 10rem
+      text-transform: uppercase
+      +text-shadow(0px 1px 3px $text-shadow) 
+      line-height: 100%
+
+    p.secondary 
+      font-size: 55px
+      font-size: 5.5rem
+      line-height: 100%
+      +text-shadow(0px 1px 1px $text-shadow) 
+      margin-top: 15px
+      margin-top: 1.5rem
+      font-weight: normal
+
+  hr
+    background: #fff
+    width: 365px 
+    width: 36.5rem
+    height: 2px  
+    height: 0.2rem 
+    border: none 
+    padding: none
+    margin: 60px auto
+    margin: 6rem auto
+
+  h2
+    font-family: "Didot"
+    color: #fff
+    font-size: 26px 
+    font-size: 2.6rem
+    font-weight: normal
+
+  form.subscribe
+    +subscribe-form(#fff, #fff, #fff, none, $light-blue, $light-blue)
+    margin: 40px 0
+    margin: 4rem 0
+
+  p.discount
+    font-size: 16px
+    font-size: 1.6rem
+    color: #fff
+
+
+

@@ -1,10 +1,33 @@
 // *** Google Fonts ***
-@import "//fonts.googleapis.com/css?family=Raleway:200,400,600"
+@import "//fonts.googleapis.com/css?family=Raleway:200,500,600"
 
 html
   font-family: "Didot", serif
   font-size: 62.5%
 
-body
-  font-size: 1em
+=placeholder 
+  &::-webkit-input-placeholder 
+    @content
 
+  &:-moz-placeholder           
+    @content
+
+  &::-moz-placeholder          
+    @content
+
+  &:-ms-input-placeholder      
+    @content
+
+.didot-number
+  font-family: "Adobe Garamond"
+
+h3
+  font-family: "Raleway"
+  font-size: 34px
+  font-size: 3.4em
+  font-weight: 500
+
+p
+  font-size: 19px
+  font-size: 1.9em
+  line-height: 160%
