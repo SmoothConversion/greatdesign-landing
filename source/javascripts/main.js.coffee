@@ -4,7 +4,7 @@ HRULE_HEIGHT_PCT = 0.0058
 baseFontSize = parseFloat($("html").css("font-size")) 
 
 resolveFont = ->
-  $submitBtns = $("input[type=submit]").removeClass("transition")
+  $submitBtns = $("input[type=submit], .social a").removeClass("transition")
   w = $(window).width()
   multiplier = w / BASE_WIDTH
   newFontSize = multiplier * baseFontSize

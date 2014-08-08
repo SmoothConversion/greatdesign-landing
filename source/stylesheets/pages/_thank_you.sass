@@ -31,4 +31,47 @@ $top-bottom-margin: 5%
     p 
       color: darken($charcoal, 8%)
       width: 67.5%
-    
+
+  .social
+    margin-top: 4%
+
+    @media (max-width : 900px)
+      margin-top: 6%
+
+    p 
+      margin-bottom: 2.5% 
+    a 
+      +clearfix
+      display: block
+      width: 45%
+      
+      @media (max-width : 900px)
+        width: 60%
+
+      @media (max-width : 685px)
+        width: 70%
+
+      @media (max-width : 470px)
+        width: 85%
+
+
+      img 
+        height: 3rem
+        margin: 0 20px
+        float: left 
+        position: relative 
+      span 
+        float: right
+        margin: 10px 0
+
+      &.twitter 
+        +submit-cta(none, $twitter-cyan, $twitter-cyan)
+        img 
+          top: 7px
+          left: -20px
+
+      &.fb
+        +submit-cta(none, $fb-blue, $fb-blue)
+        img
+          top: 7px 
+          left: 2px
