@@ -3,6 +3,9 @@
   padding: 5.85% 0
   text-align: center
   border-bottom: 1px solid $light-gray
+
+  @media (max-width : 685px)
+    padding: 8% 0
   
   h3
     color: $charcoal
@@ -13,6 +16,9 @@
     width: 67%
     margin: 0 auto
     text-align: left
+
+    @media (max-width : 685px)
+      width: 80%
 
   form.subscribe
     +subscribe-form($dark-gray, $dark-gray, $dark-gray, $charcoal, #fff, $charcoal)
