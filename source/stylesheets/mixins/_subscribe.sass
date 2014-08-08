@@ -36,6 +36,11 @@
   input[type=email]
     +email-input($input-text, $input-border, $input-outline)
     margin-right: 2.92%
+    
+    @media (max-width : 685px)
+      width: 50%
+      display: block 
+      margin: 4% auto
 
   input[type=submit]
     +submit-cta($submit-fill, $submit-text, $submit-border)

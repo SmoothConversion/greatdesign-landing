@@ -1,5 +1,5 @@
 ---
-title: A curated high end template marketplace - Greatdesign.io
+title: High End Templates - Greatdesign.io
 ---
 
 #landing-banner
@@ -8,17 +8,15 @@ title: A curated high end template marketplace - Greatdesign.io
   .content
     h1 
       p.primary Great Design
+      p.primary.mobile Great Design
       p.secondary is worth paying for.
+      p.secondary.mobile is worth paying for.
     hr 
-    h2 We're building the web's first curated high end template marketplace.
+    h2.subtitle We're building the web's first curated high end template marketplace.
+  
+    = partial "banner_cta", locals: {klass: "default"}
 
-    = partial "customer_email_subscribe", 
-              locals: { subscribe_button: "Find out when we launch" }
-    
-    p.discount 
-      = "** All pre-launch subscribers receive a LIFETIME "
-      span.didot-number= "10"
-      = "% discount **"
+= partial "banner_cta", locals: {klass: "mobile"}
 
 #info-sections
   section
@@ -56,7 +54,10 @@ title: A curated high end template marketplace - Greatdesign.io
       
       p
         = "Requirements will be stringent, but the rewards will also be great. "
-        strong We’ll give designers 70% of sales with no exclusivity agreements. 
+        strong 
+          ="We’ll give designers "
+          span.didot-number 70
+          ="% of sales with no exclusivity agreements. "
         = "Simple. Fair. On your side. That’s what we’re all about."
 
     section 

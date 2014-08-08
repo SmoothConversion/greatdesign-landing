@@ -15,7 +15,6 @@ $top-bottom-margin: 5%
     margin: 0 0 $top-bottom-margin/2 $left-gutter
     padding: $top-bottom-margin 0 $top-bottom-margin/3 0
     border-bottom: 1px solid rgba(#fff, 0.7)
-
   .content 
     padding-left: $left-gutter
     +box-sizing(border-box)
@@ -27,6 +26,7 @@ $top-bottom-margin: 5%
     h3
       color: $light-purple
       margin-bottom: $top-bottom-margin/3
+      max-width: 70%
 
     p 
       color: darken($charcoal, 8%)
@@ -37,6 +37,9 @@ $top-bottom-margin: 5%
     +subscribe-form($light-purple, $light-purple, $light-purple, none, #fff, #fff)
     input[type=email]
       margin-left: $left-gutter
+    input[type=submit]
+      @media (max-width : 685px)
+        margin-left: $left-gutter
 
 
 

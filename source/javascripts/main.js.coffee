@@ -8,8 +8,8 @@ resolveFont = ->
   w = $(window).width()
   multiplier = w / BASE_WIDTH
   newFontSize = multiplier * baseFontSize
-  newPct = newFontSize / 16
-  $("html").css("font-size", "#{newPct * 100}%")
+  newPct = Math.max(45, (newFontSize / 16) * 100)
+  $("html").css("font-size", "#{newPct}%")
   setTimeout((-> $submitBtns.addClass("transition")), 0)
 
 resolveHr = ->
