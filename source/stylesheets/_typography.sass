@@ -1,12 +1,9 @@
-// *** Google Fonts ***
-@import "//fonts.googleapis.com/css?family=Raleway:200,500,600"
-
 $heading-font: "Raleway", sans-serif
-$body-font: "Avenir Next", sans-serif
-$accent-font: "Didot", serif
+$body-font: "Proxima Nova", sans-serif
 
 html
   font-family: $body-font
+  font-weight: 400
   font-size: 62.5%
 
 =placeholder 
@@ -22,9 +19,6 @@ html
   &:-ms-input-placeholder      
     @content
 
-// .didot-number
-//   font-family: "Adobe Garamond"
-
 h3
   font-family: $heading-font
   font-size: 35px
@@ -35,3 +29,6 @@ p
   font-size: 19px
   font-size: 1.9rem
   line-height: 160%
+
+  strong 
+    font-weight: 900

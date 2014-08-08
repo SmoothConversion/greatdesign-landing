@@ -1,17 +1,27 @@
 .full-banner
   margin: 0
   padding: 0
+  position: relative
   img 
     width: 100%
     height: auto
     margin: 0 
+
+  .overlay 
+    position: absolute
+    z-index: 2
+    width: 100%
+    height: 100%
+    height: calc(100% - 3px)
+    background: #000
+    opacity: 0.25
 
   .content
     position: absolute 
     top: 0
     +box-sizing(border-box)
     padding-top: 2.44%
-    z-index: 2
+    z-index: 3
     width: 100%
     text-align: center
 
@@ -46,7 +56,7 @@
       +text-shadow(0px 1px 1px $text-shadow) 
       margin-top: 15px
       margin-top: 1.5rem
-      font-weight: normal
+      font-weight: 100
       font-family: $body-font
 
       &.mobile 
@@ -65,7 +75,7 @@ h2.subtitle
   color: #fff
   font-size: 26px 
   font-size: 2.6rem
-  font-weight: normal
+  font-weight: 400
   margin: 0 5%
 
 
@@ -77,6 +87,12 @@ h2.subtitle
     font-size: 17px
     font-size: 1.7rem
     color: #fff
+    display: inline-block
+    strong 
+      font-weight: 900
+
+    padding-bottom: 1%
+    margin: 0 auto
   
   &.mobile 
     display: none
@@ -93,7 +109,7 @@ h2.subtitle
 
 
 @media (max-width : 685px)
-  .banner-cta
+  body .banner-cta
     &.default 
       display: none
 
@@ -101,14 +117,21 @@ h2.subtitle
       position: relative
       display: block
       margin-top: -3px
-      background: $darkened-charcoal
+      background: $lightest-charcoal
       +box-sizing(border-box)
-      border: 12px solid $darkest-charcoal
       text-align: center
-      padding: 2% 0 3.25%
+      padding: 8% 0
+      // border: solid 5px $darkened-charcoal
+
+      h2.subtitle
+        font-family: $heading-font
+        color: $charcoal
+        font-weight: 500
+        font-size: 35px
+        font-size: 3.5rem
 
       form.subscribe 
-        +subscribe-form($light-charcoal, $light-charcoal, $light-charcoal, none, $light-blue, $light-blue)
+        +subscribe-form($charcoal, $charcoal, $charcoal, $charcoal, #fff, $charcoal)
         margin-bottom: 4%
 
         input[type=email]
@@ -119,12 +142,18 @@ h2.subtitle
           border-width: 1px
 
       p.discount 
-        color: lighten($light-charcoal, 15%)
-        margin-left: 5%
-        margin-right: 5%
+        color: $charcoal
+        margin-left: 3%
+        margin-right: 3%
+        font-weight: normal
+        font-size: 11px
+        margin-top: 2.5%
   
-  #landing-banner .content
-    padding-top: 5%
+  #landing-banner 
+    h1 p.primary.mobile 
+      display: none
+    .content
+      padding-top: 4%
 
 
 @media (max-width : 593px)
@@ -135,9 +164,6 @@ h2.subtitle
       h2.subtitle
         display: block
         margin-bottom: 6%
-
-
-  
 
   #landing-banner
     hr, h2.subtitle
@@ -153,26 +179,23 @@ h2.subtitle
       display: none
 
       &.mobile 
-        font-size: 24px
+        font-size: 22px
         display: block
 
   .banner-cta
     &.mobile
       h2.subtitle
-        font-size: 17px
+        font-size: 15px
 
-@media (max-width : 520px)
+@media (max-width : 480px)
   #landing-banner
     h1 
       p.primary 
         display: none
 
         &.mobile 
-          font-size: 60px
+          font-size: 50px
           display: block
-    
-      p.secondary.mobile
-        font-size: 20px
 
     .content 
       padding-top: 8%

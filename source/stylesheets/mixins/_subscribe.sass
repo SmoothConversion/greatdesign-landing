@@ -17,6 +17,10 @@
   &.transition
     +transition(all 0.2s linear)
 
+  @media (max-width : 685px)
+    padding: 2% 5%
+
+
 =email-input($text-color, $border-color, $outline-color)
   font-size: 17px
   font-size: 1.7rem
@@ -41,6 +45,7 @@
       width: 50%
       display: block 
       margin: 4% auto
+      padding: 2% 3.5%
 
   input[type=submit]
     +submit-cta($submit-fill, $submit-text, $submit-border)
