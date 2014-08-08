@@ -23,6 +23,12 @@ html
     / Place favicon.ico and apple-touch-icon.png in the root directory
     link rel="stylesheet" href="/stylesheets/main.css"
     script src="/javascripts/vendor/modernizr-2.6.1.min.js"
+    
+    meta property="og:title" content="A curated, high end template marketplace - Greatdesign.io"
+    meta property="og:site_name" content="GreatDesign.io"
+    meta property="og:description" content="Great design is worth paying for. We're building the web's first curated high end template marketplace."
+    meta property="og:image" content="http://www.greatdesign.io/images/banner.jpg"
+    meta property="og:url" content="http://www.greatdesign.io"
 
     = yield_content :head
 
@@ -52,5 +58,12 @@ html
       ga('create', 'UA-48647914-2', 'auto');
       ga('send', 'pageview');
   
-
-
+	#fb-root
+	javascript:
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
