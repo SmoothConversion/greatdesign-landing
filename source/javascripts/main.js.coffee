@@ -27,4 +27,4 @@ $(window).resize resolveResponsive
 setTimeout((-> $("body").show()),0)
 
 $("form").submit (e)->
-  _trackEvent("landing", "signup", $(e.target).attr("id"))
+  _gaq.push("_trackEvent", "landing", "signup", $(e.target).attr("id"))
