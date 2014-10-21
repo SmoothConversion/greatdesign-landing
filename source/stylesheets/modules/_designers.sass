@@ -62,6 +62,11 @@ $top-bottom-margin: 5%
   #landing-banner
     .content
       padding-top: 9%
+      @media (max-width : 593px)
+        padding-top: 15%
+      @media (max-width : 420px)
+        padding-top: 7.5%
+
     .banner-cta
       form, .discount
         display: none
@@ -69,19 +74,26 @@ $top-bottom-margin: 5%
   #designers
     background: #fff
     section
-      margin-top: 2rem
+      margin-bottom: 4rem
     h1
-      color: $charcoal
-      border-bottom: 1px solid rgba($charcoal, 0.8)
+      color: $purple
+      border-bottom: 1px solid rgba($purple, 0.8)
+      margin-bottom: 4rem
     h2
       font-weight: 400
-      color: darken($purple, 5%)
+      // color: darken($purple, 5%)
+      color: $charcoal
+
+    p
+      color: $dark-gray
 
     form.subscribe
       +subscribe-form($charcoal, $charcoal, $charcoal, $charcoal, #fff, #fff)
       input[type=submit]
         font-weight: 400
-
+      input[type=email], input[type=submit]
+        @media (max-width : 685px)
+          margin-left: 10%
   a.home
     padding-left: 15%
     text-decoration: none
