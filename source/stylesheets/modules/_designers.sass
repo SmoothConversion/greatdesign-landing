@@ -5,7 +5,7 @@ $top-bottom-margin: 5%
   background: $purple
   padding-bottom: $top-bottom-margin
 
-  h2
+  h1
     font-family: $heading-font
     text-transform: uppercase
     color: #fff
@@ -19,7 +19,7 @@ $top-bottom-margin: 5%
     @media (max-width : 685px)
       margin-left: $left-gutter * 0.66
 
-  .content 
+  .designers-content
     padding-left: $left-gutter
     @media (max-width : 685px)
       padding-left: $left-gutter * 0.66
@@ -30,18 +30,19 @@ $top-bottom-margin: 5%
     section
       margin-bottom: $top-bottom-margin/2
 
-    h3
+    h2
       color: $light-purple
       margin-bottom: $top-bottom-margin/3
+      font-size: 3rem
 
-    p 
+    p
       color: darken($charcoal, 8%)
       width: 67.5%
-      
+
       @media (max-width : 685px)
         width: 85%
 
-    
+
   form.subscribe
     width: 100%
     +subscribe-form($light-purple, $light-purple, $light-purple, none, #fff, #fff)
@@ -52,6 +53,38 @@ $top-bottom-margin: 5%
     input[type=submit]
       @media (max-width : 685px)
         margin-left: $left-gutter * 0.66
+
+
+
+.designer-landing
+  background: #fff
+
+  #landing-banner
+    .content
+      padding-top: 9%
+    .banner-cta
+      form, .discount
+        display: none
+
+  #designers
+    background: #fff
+    h1
+      color: $charcoal
+      border-bottom: 1px solid rgba($charcoal, 0.8)
+    h2
+      font-weight: 400
+      color: $purple
+
+    form.subscribe
+      +subscribe-form($charcoal, $charcoal, $charcoal, $charcoal, #fff, #fff)
+      input[type=submit]
+        font-weight: 400
+
+  a.home
+    padding-left: 15%
+    text-decoration: none
+
+
 
 
 

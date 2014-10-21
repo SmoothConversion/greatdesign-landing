@@ -2,7 +2,7 @@
 =submit-cta($fill-color, $text-color, $border-color)
   background: $fill-color
   cursor: pointer
-  border: 2px solid $border-color
+  border: 1px solid $border-color
   font-size: 17px
   font-size: 1.7rem
   font-weight: bold
@@ -11,7 +11,7 @@
   +border-radius(11px)
   +border-radius(1.1rem)
 
-  &:hover 
+  &:hover
     +box-shadow(rgba($border-color, 0.4) 0 0 6px 4px)
     +box-shadow(rgba($border-color, 0.4) 0 0 0.6rem 0.4rem)
 
@@ -29,24 +29,24 @@
   font-size: 1.7rem
   border: 1px solid $border-color
   padding: 0.97% 1.46%
-  background: none 
+  background: none
   +box-sizing(border-box)
   width: 29%
   color: $text-color
   outline-color: $outline-color
   // +border-radius(0)
 
-  +placeholder 
+  +placeholder
     color: $text-color
 
 =subscribe-form($input-text, $input-border, $input-outline, $submit-fill, $submit-text, $submit-border)
   input[type=email]
     +email-input($input-text, $input-border, $input-outline)
     margin-right: 2.92%
-    
+
     @media (max-width : 685px)
       width: 50%
-      display: block 
+      display: block
       margin: 4% auto
       padding: 2% 3.5%
 

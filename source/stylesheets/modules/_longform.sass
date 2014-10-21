@@ -1,0 +1,48 @@
+.longform
+  color: $charcoal
+
+
+  .content
+    padding-left: 15%
+    padding-top: 2rem
+
+  h1
+    text-transform: uppercase
+    border-bottom: solid 1px rgba($charcoal, 0.65)
+    font-family: "Raleway"
+    font-size: 6rem
+    font-weight: 100
+    padding-bottom: 1rem
+
+  h2
+    color: $purple
+    border-bottom: solid 1px rgba($purple, 0.8)
+    padding-bottom: 0.8rem
+    font-family: "Raleway"
+    font-size: 3.5rem
+    font-weight: 300
+    margin-top: 5rem
+
+  p
+    margin-right: 6rem
+
+    a, a:visited
+      color: $purple
+      font-weight: 600
+      text-decoration: none
+
+  ul
+    list-style: none
+    margin-top: 2.5rem
+    li
+      position: relative
+      margin-bottom: 2.5rem
+      &::before
+        content: "▶"
+        font-size: 1.6rem
+        color: $purple
+        display: inline-block
+        position: absolute
+        left: -2.9rem
+        top: 0.5rem
+

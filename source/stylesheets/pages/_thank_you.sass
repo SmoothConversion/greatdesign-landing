@@ -5,6 +5,9 @@ $top-bottom-margin: 5%
   background: #fff
   padding-bottom: $top-bottom-margin
 
+  h3
+    font-size: 3rem
+
   h2
     font-family: $heading-font
     text-transform: uppercase
@@ -15,7 +18,7 @@ $top-bottom-margin: 5%
     margin: 0 0 $top-bottom-margin/2 $left-gutter
     padding: $top-bottom-margin 0 $top-bottom-margin/3 0
     border-bottom: 1px solid $charcoal
-  .content 
+  .content
     padding-left: $left-gutter
     +box-sizing(border-box)
     margin-bottom: $top-bottom-margin * 0.75
@@ -28,7 +31,7 @@ $top-bottom-margin: 5%
       margin-bottom: $top-bottom-margin/3
       max-width: 70%
 
-    p 
+    p
       color: darken($charcoal, 8%)
       width: 67.5%
 
@@ -38,13 +41,13 @@ $top-bottom-margin: 5%
     @media (max-width : 900px)
       margin-top: 6%
 
-    p 
-      margin-bottom: 2.5% 
-    a 
+    p
+      margin-bottom: 2.5%
+    a
       +clearfix
       display: block
       width: 45%
-      
+
       @media (max-width : 900px)
         width: 60%
 
@@ -55,23 +58,23 @@ $top-bottom-margin: 5%
         width: 85%
 
 
-      img 
+      img
         height: 3rem
-        margin: 0 20px
-        float: left 
-        position: relative 
-      span 
+        margin: 0 2rem
+        float: left
+        position: relative
+      span
         float: right
-        margin: 10px 0
+        margin: 1rem 0
 
-      &.twitter 
+      &.twitter
         +submit-cta(none, $twitter-cyan, $twitter-cyan)
-        img 
-          top: 7px
-          left: -20px
+        img
+          top: 1rem
+          left: -2rem
 
       &.fb
         +submit-cta(none, $fb-blue, $fb-blue)
         img
-          top: 7px 
-          left: 2px
+          top: 1rem
+          left: -0.5rem
