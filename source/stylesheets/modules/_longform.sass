@@ -5,6 +5,7 @@
   .content
     padding-left: 15%
     padding-top: 2rem
+    padding-bottom: 5rem
 
   h1
     text-transform: uppercase
@@ -23,6 +24,7 @@
     font-weight: 300
     margin-top: 5rem
 
+
   p
     margin-right: 6rem
 
@@ -30,6 +32,9 @@
       color: $purple
       font-weight: 600
       text-decoration: none
+
+  img
+    max-width: 100%
 
   ul
     list-style: none
@@ -40,9 +45,22 @@
       &::before
         content: "▶"
         font-size: 1.6rem
-        color: $purple
+        color: rgba($purple, 0.8)
         display: inline-block
         position: absolute
         left: -2.9rem
         top: 0.5rem
+
+    &.link-list
+      li::before
+        font-size: 2rem
+        content: "⇢"
+        color: $dark-gray
+        top: 0.2rem
+
+    &.contents-list
+      li::before
+        content: "●"
+        color: rgba($purple, 0.8)
+        left: -2.4rem
 
