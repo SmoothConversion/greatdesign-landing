@@ -1,5 +1,5 @@
 <% content_for :page_class, "longform guidelines" %>
-# Template Guidelines
+# Guidelines For **Great** Templates
 
 [We’re building a new kind of template marketplace](/){:target="_blank"} that places the focus on quality and avoids the race-to-the-bottom economics that are prevalent on so many other template sites.
 
@@ -7,9 +7,20 @@ While our customers may be interested in the quick turnaround and lower cost tha
 
 In order to give this discerning bunch what they want, we’ll carefully evaluate submissions to ensure they meet our requirements for design quality and clean, well organized code. We’ve created these guidelines to give designers insight into what we’re looking for.
 
-## Design Guidelines
+##Contents##
 
-A good way to get a sense of the aesthetic and level of design that we’re going for is to check out [Land Book](http://land-book.com/){:target="_blank"}, a curated collection of great landing pages. Most of them share certain characteristics:
+- [Design Guidelines And Resources](#design-guidelines-and-resources)
+
+- [Code Guidelines And Resources](#code-guidelines-and-resources)
+
+- [Browser And Device Support](#browser-and-device-support)
+
+- [Template Types And Platforms](#template-types-and-platforms)
+{: .contents-list}
+
+## Design Guidelines And Resources
+
+A good way to get a sense of the aesthetic and level of design that we’re going for is to check out [Land Book](http://land-book.com/){:target="_blank"}, a curated collection of great landing pages. [Squarespace's templates](https://www.squarespace.com/templates/){:target="_blank"} also offer many good examples. Most of these share certain characteristics:
 
 - An **elegant**, **stylish**, and **friendly** vibe.
 
@@ -17,7 +28,7 @@ A good way to get a sense of the aesthetic and level of design that we’re goin
 
 - Not derivative or clichéed. Has a **unique personality.**
 
-- **Responsive.** Designed to adapt smoothly to all commonly used browsers, devices, and screen sizes.
+- **Responsive.** Designed to adapt smoothly to all common screen sizes.
 
 - Good **visual hierarchy**. Attention isn’t pulled in many directions at once, but flows smoothly through the page.
 
@@ -41,17 +52,76 @@ Application functionality deserves as much design love as the landing page, so w
 
 - **Select open source components carefully.** Only include those that are high quality, bug-free, responsive, and can integrate smoothly with the overall design and user experience.
 
-We believe that talented designers who follow these guidelines and inject their own creativity will be able to produce work far better than what has become the norm for template sites. And on our marketplace, they'll also receive correspondingly far better rewards.
+We believe that talented designers who follow these guidelines and inject their own creativity will be able to produce work far better than what has become the norm for template sites. And on our marketplace, they'll also receive far better rewards.
 
-## Code Guidelines
+Here are some more resources that can help you reach the pinnacles of designerdom:
 
->Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
-> <cite>Martin Fowler</cite>
+- [Designing Web Applications by Nathan Barry](http://nathanbarry.com/webapps/){:target="_blank"} - a great overview of web application user experience and visual design.
 
-When we look at code, we'll judge it based two main factors.
+- [How To Become A Conversion Focused Designer](http://webdesign.tutsplus.com/articles/how-to-become-a-conversion-centered-designer--cms-19664){:target="_blank"} - what good is a gorgeous landing page that doesn't convert?
 
-1. Is it bug-free and working as it should across all common browsers and devices? See our [Platform Support Guidelines]("#platform-support-guidelines") at the bottom of this document.
+- [Startups, this is how design works](https://startupsthisishowdesignworks.com/){:target="_blank"} - a wonderful treatise on product design aimed at startups.
 
-2. This includes both organization of directories, files, and components at a high level, and
+- [Beautiful Web Type](http://hellohappy.org/beautiful-web-type/){:target="_blank"} - an elegant showcase of the some of the best Google Web Fonts.
 
-## Platform Support Guidelines
+- [Typekit](https://typekit.com/){:target="_blank"} - Adobe's collection of affordable and high quality fonts.
+
+- [Stocksy](http://www.stocksy.com/){:target="_blank"} - beautiful and affordable stock photography from a site that treats their photographers right.
+
+- [UI Faces](http://uifaces.com/){:target="_blank"} - these hip folks have all leant their faces to be used freely in web designs.
+
+- [Pinterest Web Design Inspiration](http://www.pinterest.com/webdesigns/web-design-inspiration/){:target="_blank"} - a Pinterest board full of more sites that embody the Great Design ethos.
+{: .link-list}
+
+## Code Guidelines And Resources
+
+When we look at code, we'll judge it according to a few main factors:
+
+- **Is it bug-free and working as it should across all major browsers and devices?** See  [Browser And Device Support](#browser-and-device-support) at the bottom of this page for the full list of browsers and devices we'll test on. We recommend [Saucelabs](https://saucelabs.com/) or a similar tool for testing.
+
+- **Is the code organized, readable, modular, maintainable, and extendable?** This includes organization of directories, files, and components, keeping files **short**, clean separation of html, css, and javascript, **naming things well**, consistent indentation, and following best practices for each language.
+
+- **Does it rely on solid libraries and components?** When open source libraries and components are used, we will be checking on them to ensure they are architecturally sound, well-documented, and have developer-friendly APIs.
+
+Rather than dig any further into the details of a topic that could fill several books (or several libraries), we'll point you toward a few style guides that we think offer good advice on keeping front-end code well structured:
+
+- [Codeguide.co](http://codeguide.co/){:target="_blank"} - a good all around front-end guide.
+
+- [Github's CSS Style Guide](https://github.com/styleguide/css){:target="_blank"} - well-written and fairly brief guide to good css.
+
+- [Google's HTML and CSS Style Guide](https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#Semantics){:target="_blank"} - comprehensive with lots of examples.
+
+- [Airbnb's JavaScript Style Guide](https://github.com/airbnb/javascript){:target="_blank"} - a quite thorough guide to writing clean and robust javascript.
+
+- [JQuery JavaScript Style Guide](http://contribute.jquery.org/style-guide/js/){:target="_blank"} and [JQuery HTML Style Guide](http://contribute.jquery.org/style-guide/html/){:target="_blank"} - a JQuery-oriented perspective.
+
+- [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide){:target="_blank"} - a good collection of best practices if you use CoffeeScript in your template.
+
+- [ZURB Responsive Design Best Practices](http://zurb.com/responsive/design){:target="_blank"} - a guide from the creators of the responsive Foundation framework.
+
+- [A List Apart Responsive Design Overview](http://alistapart.com/article/responsive-web-design){:target="_blank"} - a very well-written overview of the key considerations for designing and building responsive sites.
+
+- [Wordpress Best Practices](http://vip.wordpress.com/documentation/best-practices/){:target="_blank"} - best practices for Wordpress plugins and themes.
+
+- [Magento Best Practices](http://www.sitepoint.com/magento-basics-request-flow-standards-best-practices/){:target="_blank"} - Sitepoint article on Magento best practices.
+{: .link-list}
+
+We aren't requiring that submissions follow *every* rule in these guides. We understand that people have their own styles. We don't need uniformity, but we *do* need fanatical devotion to organization, readability, and quality.
+
+## Browser And Device Support
+
+To illustrate our browser support requirements, we're borrowing this nifty table from [Bootstrap's browser support section](http://getbootstrap.com/getting-started/#support).
+
+![Browser Support Requirements Table](/images/browser-support.png)
+
+This means that templates must support the latest stable version of each listed browser on each platform where the two intersect with a checkmark. **For Internet Explorer, we require support of IE10+.**
+
+**We do not require support of IE9, IE8, IE7, or IE6**, but you will have to specify whether your template supports these browsers, so you may want to consider doing so if gaining a somewhat wider market is worth the extra the effort.
+
+We do not require support for any additional browsers or devices.
+
+## Template Types And Platforms
+
+We are open-minded about platforms and types of templates. If we seem to be lacking in templates for certain categories, we may ask for them in particular when we put out a call for submissions, but as a general rule we are willing to consider any kind of theme or template as long as it meets our quality standards.
+
+

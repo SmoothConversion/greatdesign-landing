@@ -1,11 +1,11 @@
+- url_path = locals[:path].present? ? "/#{locals[:path]}" : ""
 .social
   p
-    a.fb.transition href='http://www.facebook.com/share.php?u=http://www.greatdesign.io'
+    a.fb.transition href="http://www.facebook.com/share.php?u=http://www.greatdesign.io#{url_path}"
       img src="/images/facebook-share.png"
       span Share us on Facebook
 
-  p  
-    a.twitter.transition href="https://twitter.com/intent/tweet?text=#{message}&url=http://greatdesign.io" class="twitter-share-button" data-url="http://www.greatdesign.io" data-count="none"
+  p
+    a.twitter.transition href="https://twitter.com/intent/tweet?text=#{message}&url=http://greatdesign.io#{url_path}" class="twitter-share-button" data-url="http://www.greatdesign.io#{url_path}" data-count="none"
       img src="/images/twitter-icon.png"
       span Share us on Twitter
-    
