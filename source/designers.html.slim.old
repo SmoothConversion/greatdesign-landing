@@ -1,0 +1,9 @@
+- content_for :page_class, "designer-landing"
+
+= partial "landing_banner"
+
+= partial "designer_copy"
+
+/ a.home href="/"
+/   | Learn more about
+/   span GREATDESIGN.IO

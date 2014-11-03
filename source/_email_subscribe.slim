@@ -1,4 +1,3 @@
 form.subscribe id="#{form_id}" action="http://smoothconversion.createsend.com/t/d/s/#{list_code}/"
   input placeholder="Your email" name="cm-#{list_code}-#{list_code}" type="email" required="required"
-  input type="submit" value=(locals[:subscribe_button] || "Submit")
-
+  button.submit =(locals[:subscribe_button] || "Submit")

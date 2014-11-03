@@ -50,7 +50,7 @@ $top-bottom-margin: 5%
       margin-left: $left-gutter
       @media (max-width : 685px)
         margin-left: $left-gutter * 0.66
-    input[type=submit]
+    button.submit
       @media (max-width : 685px)
         margin-left: $left-gutter * 0.66
 
@@ -105,9 +105,9 @@ $top-bottom-margin: 5%
 
     form.subscribe
       +subscribe-form($charcoal, $charcoal, $charcoal, $charcoal, #fff, #fff)
-      input[type=submit]
+      button.submit
         font-weight: 400
-      input[type=email], input[type=submit]
+      input[type=email], button.submit
         @media (max-width : 685px)
           margin-left: 10%
 

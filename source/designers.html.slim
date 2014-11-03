@@ -1,9 +1,48 @@
 - content_for :page_class, "designer-landing"
 
-= partial "landing_banner"
+.bg
+  img src="/images/desk.jpg"
+  .overlay
+  a.logo href="/" target="_blank"
+    span.left Great
+    span.right Design.io
 
-= partial "designer_copy"
+  a.smoothc href="http://www.smoothconversion.com" target="_blank"
+    span produced by
+    img src="/images/smoothc.png"
 
-/ a.home href="/"
-/   | Learn more about
-/   span GREATDESIGN.IO
+.content
+  h1
+    span.great ="Great "
+    span ="Designers"
+    span.profits deserve great profits.
+
+  h2
+    = "Imagine a template marketplace where customers "
+    strong pay more for quality
+    = " and designers get "
+    strong 70% of sales
+    = " with "
+    strong no exclusivity agreements.
+
+  section.join
+    .top-row
+      .submissions Submissions open soon.
+      .copy
+        p
+          = "Join the candidate's list to be first in line. You'll get a detailed guide on creating "
+          strong great templates
+          = " that meet our design and code standards."
+
+    .form-container
+      = partial "designer_email_subscribe",
+                 locals: { subscribe_button: "Get the profits you deserve" }
+
+      .no-spam
+        ="We'll "
+        span never
+        =" send spam or share your email."
+
+
+
+
