@@ -59,3 +59,6 @@ setTimeout(
 $("form").submit (e)->
   _gaq.push("_trackEvent", "landing", "signup", $(e.target).attr("id"))
 
+$ ->
+  $(".utm-input").attr("value", getParameterByName("utm"))
+
