@@ -17,9 +17,14 @@
 
     section
       h2 Interested in submitting a template?
-      p We’ll let you know as soon as we’re ready for the first round of submissions. We’ll also send you a list of guidelines that describe the design aesthetic and coding standards we’re looking for.
+      p
+        | Go
+        a href="/submit.html" =" here."
+        = " Or sign up below to stay in the loop and receive a guide on creating "
+        strong great templates
+        = " that meet our design and code standards."
 
   = partial "designer_email_subscribe",
-            locals: { subscribe_button: "Be first in line" }
+            locals: { subscribe_button: "Get the profits you deserve" }
 
-  span.no-spam ="We'll never spam you or share your email address. That would be uncouth."
+  span.no-spam ="We'll never spam you."
