@@ -24,7 +24,7 @@
   text-decoration: none
 
 
-=email-input($text-color, $border-color, $outline-color)
+=text-input($text-color, $border-color, $outline-color)
   font-size: 17px
   font-size: 1.7rem
   border: 1px solid $border-color
@@ -40,8 +40,8 @@
     color: $text-color
 
 =subscribe-form($input-text, $input-border, $input-outline, $submit-fill, $submit-text, $submit-border)
-  input[type=email]
-    +email-input($input-text, $input-border, $input-outline)
+  input[type=email], input[type=text]
+    +text-input($input-text, $input-border, $input-outline)
     margin-right: 2.92%
 
     @media (max-width : 685px)

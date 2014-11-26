@@ -1,14 +1,22 @@
-.submit
+.submissions
   form
-    margin-top: 40px
-    width: 60%
-    input[type=text], input[type=email]
-      +email-input($charcoal, $charcoal, $charcoal)
+    width: 100%
+    +subscribe-form(darken($light-purple, 2%), $light-purple, $light-purple, $charcoal, #fff, $charcoal)
+
+    margin-top: 3rem
+    input
       display: block
-      width: 68.3%
-      margin-bottom: 20px
-      font-size: 22px
-    input[type=submit]
-      +submit-cta($purple, white, $charcoal)
-      font-size: 22px
-      font-weight: normal
+      margin-top: 1.5rem
+
+    button
+      display: block
+      margin-top: 2.25rem
+
+    input[type=text], input[type=email], button
+      width: 40%
+
+      @media (max-width : 685px)
+        width: 70%
+        display: block
+        margin: 1.5rem 0 0 0
+        padding: 2% 2.5%
